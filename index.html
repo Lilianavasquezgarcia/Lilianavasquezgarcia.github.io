@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Perfil profesional de Liliana Vásquez-García, experta en Sistemas Socioecológicos y Ciencia de Datos.">
     <title>Perfil Profesional | Ciencia de Datos & Sistemas Socioecológicos</title>
     <style>
         :root {
-            --primary: #3C5233; /* Verde oscuro científico */
-            --secondary: #264027; /* Tono aqua tecnológico */
-            --accent: #2d3436;
-            --bg: #2d3436;
+            --primary: #3C5233; 
+            --secondary: #4A633F; 
+            --accent: #6F732F;
+            --bg: #ffffff;
             --text: #2d3436;
             --light-gray: #f8f9fa;
         }
@@ -21,7 +22,7 @@
             background-color: var(--bg);
         }
         header {
-            background: linear-gradient(135deg, var(--primary), #6F732F);
+            background: linear-gradient(135deg, var(--primary), var(--accent));
             color: white;
             padding: 4rem 2rem;
             text-align: center;
@@ -38,9 +39,8 @@
             margin-top: 2rem;
         }
         h1 { margin-bottom: 0.5rem; font-size: 2.8rem; letter-spacing: -1px; }
-        h2 { color: var(--primary); border-bottom: 2px solid var(--secondary); padding-bottom: 8px; font-size: 1.4rem; }
+        h2 { color: var(--primary); border-bottom: 2px solid var(--light-gray); padding-bottom: 8px; font-size: 1.4rem; }
         .profile-text { font-size: 1.05rem; text-align: justify; }
-        .highlight { color: var(--secondary); font-weight: 600; }
         
         .skills-box {
             background: var(--light-gray);
@@ -64,9 +64,12 @@
             font-weight: 500;
         }
         footer { text-align: center; padding: 3rem; font-size: 0.9rem; color: #888; }
+        a { text-decoration: none; transition: 0.3s; }
+        a:hover { opacity: 0.7; }
         
         @media (max-width: 768px) {
-            .lang-section { grid-template-columns: 1fr; gap: 1rem; }
+            .lang-section { grid-template-columns: 1fr; gap: 2rem; }
+            h1 { font-size: 2rem; }
         }
     </style>
 </head>
@@ -78,9 +81,8 @@
     </header>
 
     <div class="container">
-        
         <div class="lang-section">
-            <section>
+            <section lang="es">
                 <h2>Perfil Profesional</h2>
                 <p class="profile-text">
                     Investigadora con experiencia en sistemas socioecológicos y silvoagropecuarios. 
@@ -91,7 +93,7 @@
                 </p>
             </section>
 
-            <section>
+            <section lang="en">
                 <h2>Professional Profile</h2>
                 <p class="profile-text">
                     Researcher driving measurable impact at the intersection of socio-ecological and agricultural systems 
@@ -113,17 +115,18 @@
                 <span class="tag">Socio-Ecological Systems</span>
                 <span class="tag">Advanced Analytics</span>
                 <span class="tag">Environmental Science</span>
-                <span class="tag">SQL/ MySQL</span>
-		<span class="tag">Power BI</span>
+                <span class="tag">SQL / MySQL</span>
+                <span class="tag">Power BI</span>
             </div>
         </section>
 
         <footer>
-            <p>&copy; 2026 | Desarrollado profesionalmente en GitHub Pages</p>
-            <p><a href="https://www.linkedin.com/in/liliana-v%C3%A1squez-garc%C3%ADa-34188b54/" style="color: var(--secondary);">LinkedIn</a> • <a href="mailto:liliana.vasquez@alumni.uni-heidelberg.de" style="color: var(--secondary);">Email</a></p>
+            <p>&copy; 2026 | Desarrollado en GitHub Pages</p>
+            <p>
+                <a href="https://www.linkedin.com/in/liliana-v%C3%A1squez-garc%C3%ADa-34188b54/" target="_blank" style="color: var(--primary);">LinkedIn</a> • 
+                <a href="mailto:liliana.vasquez@alumni.uni-heidelberg.de" style="color: var(--primary);">Email</a>
+            </p>
         </footer>
-
     </div>
-
 </body>
 </html>
