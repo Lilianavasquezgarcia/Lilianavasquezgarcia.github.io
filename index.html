@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Perfil profesional de Liliana Vásquez-García, experta en Sistemas Socioecológicos y Ciencia de Datos.">
-    <title>Perfil Profesional | Ciencia de Datos & Sistemas Socioecológicos</title>
+    <title>Perfil Profesional | Liliana Vásquez-García</title>
     <style>
         :root {
             --primary: #3C5233; 
@@ -34,6 +34,7 @@
             border: 4px solid rgba(255, 255, 255, 0.3);
             margin-bottom: 1.5rem;
             object-fit: cover;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
         }
         .container {
             max-width: 900px;
@@ -50,7 +51,7 @@
         h2 { color: var(--primary); border-bottom: 2px solid var(--light-gray); padding-bottom: 8px; font-size: 1.4rem; }
         .profile-text { font-size: 1.05rem; text-align: justify; }
         
-        .skills-box, .case-study-box {
+        .box {
             background: var(--light-gray);
             padding: 2rem;
             border-radius: 12px;
@@ -62,9 +63,15 @@
             margin-top: 1rem;
             color: white;
             background-color: var(--primary);
-            padding: 10px 20px;
+            padding: 12px 24px;
             border-radius: 8px;
             font-weight: bold;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+        .case-study-link:hover {
+            background-color: var(--accent);
+            transform: translateY(-2px);
         }
         .tags {
             display: flex;
@@ -84,6 +91,9 @@
         a { text-decoration: none; transition: 0.3s; }
         a:hover { opacity: 0.7; }
         
+        ul { padding-left: 20px; }
+        li { margin-bottom: 8px; }
+
         @media (max-width: 768px) {
             .lang-section { grid-template-columns: 1fr; gap: 2rem; }
             h1 { font-size: 2rem; }
@@ -123,17 +133,29 @@
             </section>
         </div>
 
-        <section class="case-study-box">
-            <h2>Estudio de Caso / Case Study</h2>
-            <p class="profile-text">
-               En este estudio de caso se diseñó, entrenó e implementó un modelo basado en redes neuronales capaz de clasificar imágenes en 10 categorías de prendas de vestir (Camiseta, Pantalón, Suéter, Vestido, Abrigo, Sandalia, Camisa, Zapatilla, Bolso y Bototo). Usando Keras se creó un prototipo funcional construido en lenguaje Python, capaz de predecir la categoría de una imagen de ropa con alto nivel de exactitud.
-            </p>
+        <section class="box">
+            <h2 style="margin-top: 0;">Estudio de Caso: Clasificador Inteligente de Ropa</h2>
+            <div class="profile-text">
+                <p><strong>Desafío Principal:</strong> Desarrollar un sistema de visión computacional capaz de clasificar 10 categorías de prendas, superando la ambigüedad visual entre artículos similares como camisas y camisetas.</p>
+                
+                <p><strong>Solución Propuesta:</strong> Implementación de una Red Neuronal Convolucional (CNN) en Python utilizando Keras. El proyecto abarcó desde el procesamiento de datos del dataset Fashion_MNIST hasta la validación con imágenes externas, optimizando la arquitectura para identificar patrones morfológicos específicos.</p>
+                
+                <p><strong>Habilidades Técnicas:</strong> Python, Keras, TensorFlow, Redes Neuronales Convolucionales (CNN), y Visualización de Datos con Matplotlib.</p>
+                
+                <p><strong>Métricas de Impacto:</strong> 
+                    <ul>
+                        <li><strong>90% de exactitud global</strong> en el conjunto de prueba.</li>
+                        <li>Identificación perfecta (<strong>100%</strong>) en pantalones, bolsos y calzado.</li>
+                        <li>Identificación superior al 90% en vestidos y zapatillas.</li>
+                    </ul>
+                </p>
+            </div>
             <a href="https://github.com/Lilianavasquezgarcia/Proyecto_M8" class="case-study-link" target="_blank">
-                Ver Proyecto M8: CLASIFICADOR INTELIGENTE DE IMÁGENES DE ROPA
+                Ver Proyecto M8 en GitHub
             </a>
         </section>
 
-        <section class="skills-box">
+        <section class="box">
             <h2 style="margin-top: 0;">Stack Tecnológico / Technical Stack</h2>
             <div class="tags">
                 <span class="tag">Python</span>
@@ -149,10 +171,11 @@
         </section>
 
         <footer>
-            <p>&copy; 2026 | Desarrollado en GitHub Pages</p>
+            <p>&copy; 2026 | Desarrollado por Liliana Vásquez-García</p>
             <p>
                 <a href="https://www.linkedin.com/in/liliana-v%C3%A1squez-garc%C3%ADa-34188b54/" target="_blank" style="color: var(--primary);">LinkedIn</a> • 
-                <a href="mailto:liliana.vasquez@alumni.uni-heidelberg.de" style="color: var(--primary);">Email</a>
+                <a href="mailto:liliana.vasquez@alumni.uni-heidelberg.de" style="color: var(--primary);">Email</a> • 
+                <a href="https://github.com/Lilianavasquezgarcia" target="_blank" style="color: var(--primary);">GitHub</a>
             </p>
         </footer>
     </div>
